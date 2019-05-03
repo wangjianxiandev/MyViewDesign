@@ -5,10 +5,6 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
-import android.graphics.Rect;
-import android.graphics.RectF;
-import android.graphics.Region;
-import android.graphics.RegionIterator;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -16,17 +12,17 @@ import android.view.View;
  * Created with Android Studio.
  * Description:
  * User: wjx
- * Date: 2019-04-29
- * Time: 20:44
+ * Date: 2019-05-03
+ * Time: 19:47
  */
-public class BasicView extends View {
-    public BasicView(Context context){
+public class TianChongMoShi extends View {
+    public TianChongMoShi(Context context){
         super(context);
     }
-    public BasicView(Context context, AttributeSet attributeSet){
+    public TianChongMoShi(Context context, AttributeSet attributeSet){
         super(context, attributeSet);
     }
-    public BasicView(Context context, AttributeSet attributeSet, int defStyle){
+    public TianChongMoShi(Context context, AttributeSet attributeSet, int defStyle){
         super(context, attributeSet, defStyle);
     }
 
@@ -45,17 +41,7 @@ public class BasicView extends View {
         path.setFillType(Path.FillType.WINDING);
         canvas.drawPath(path, paint);
 
-//        Path path1  = new Path();
-//        RectF rectF = new RectF(10,10,200,100);
-//        path1.addOval(rectF, Path.Direction.CCW);
-//        canvas.drawPath(path1,paint);
 
-    }
-    private void drawRegion(Canvas  canvas, Region region, Paint paint){
-        RegionIterator regionIterator = new RegionIterator(region);
-        Rect r = new Rect();
-        while (regionIterator.next(r)){
-            canvas.drawRect(r, paint);
-        }
+
     }
 }
