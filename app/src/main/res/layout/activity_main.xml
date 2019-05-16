@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <com.example.adminstator.myviewdesign.PaintBasic.zhizhuwang
+    <com.example.adminstator.myviewdesign.Canvas.CanvasTran
         android:layout_height="match_parent"
         android:layout_width="match_parent"/>
 
