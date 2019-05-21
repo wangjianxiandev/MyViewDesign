@@ -24,13 +24,13 @@ public class RegionTest extends View {
         super(context);
     }
 
-    public RegionTest(Context context,  AttributeSet attrs) {
-        super(context, attrs);
-    }
-
-    public RegionTest(Context context,  AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-    }
+//    public RegionTest(Context context,  AttributeSet attrs) {
+//        super(context, attrs);
+//    }
+//
+//    public RegionTest(Context context,  AttributeSet attrs, int defStyleAttr) {
+//        super(context, attrs, defStyleAttr);
+//    }
 
     private void drawRegion(Canvas canvas, Region region, Paint paint){
         RegionIterator regionIterator = new RegionIterator(region);

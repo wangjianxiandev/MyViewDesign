@@ -34,14 +34,14 @@ public class CanvasTran extends View {
         Paint paint_green = generatePaint(Color.GREEN, Paint.Style.STROKE, 3);
         Paint paint_red = generatePaint(Color.RED, Paint.Style.STROKE, 3);
         Rect rect = new Rect(10, 10, 200, 100);
-//        canvas.drawRect(rect, paint_green);
-//        //旋转30度
+        canvas.drawRect(rect, paint_green);
+        //旋转30度
 //        canvas.rotate(30);
 //        canvas.drawRect(rect, paint_red);
-        canvas.drawRect(rect, paint_green);
-        //sx水平方向伸缩的比例，假设原坐标轴的比例为n, 不变时为1，变更后的X轴密度为n * sx,所以sx是小数表述的缩小整数表示的放大
-        //sy垂直方向的伸缩的比例，，同样sy为小数表示的缩小，sy为整数表示的放大
-//        canvas.scale(0.5f, 1);
+//        canvas.drawRect(rect, paint_green);
+//        sx水平方向伸缩的比例，假设原坐标轴的比例为n, 不变时为1，变更后的X轴密度为n * sx,所以sx是小数表述的缩小整数表示的放大
+//        sy垂直方向的伸缩的比例，，同样sy为小数表示的缩小，sy为整数表示的放大
+        canvas.scale(0.5f, 1);
 
         //sx为将画布在x轴方向上倾斜相应的较堵，sx为倾斜角度的正切值
         //sy为将画布在y轴方向上倾斜相应的较堵，sy为倾斜较堵的正切值

@@ -2,23 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/root"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
+    tools:context=".ScaleActivity">
     <Button
-        android:id="@+id/btn"
-        android:layout_width="match_parent"
+        android:id="@+id/btn_scale"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="startAnim"/>
+        android:text="scale"
+        android:textSize="18sp"/>
     <TextView
-        android:id="@+id/text"
+        android:id="@+id/scale_text"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_gravity="center_horizontal"
+        android:text="scale"
         android:background="@android:color/darker_gray"
-        android:text="wjx"/>
-
+        android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>
