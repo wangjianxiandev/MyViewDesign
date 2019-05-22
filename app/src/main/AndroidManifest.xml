@@ -9,15 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DonghuaExampleActivity"></activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".ScaleActivity">
+        <activity android:name=".DongTaiZhenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ZhuZhenActivity">
+
+        </activity>
+        <activity android:name=".SaoMiaoActivity"></activity>
+        <activity android:name=".JiazaiKuangActivity" />
+        <activity android:name=".DonghuaExampleActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ScaleActivity" />
     </application>
 
 </manifest>

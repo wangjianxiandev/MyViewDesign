@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DonghuaExampleActivity">
+    tools:context=".JiazaiKuangActivity">
+
     <ImageView
-        android:id="@+id/image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/niuniu"
-        android:scaleType="fitXY"/>
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/routeImage"
+        android:src="@drawable/niuniu"/>
 
 </LinearLayout>
