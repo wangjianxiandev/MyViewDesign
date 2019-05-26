@@ -1,4 +1,4 @@
-package com.example.adminstator.myviewdesign;
+package com.example.adminstator.myviewdesign.ViewAnimation;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.adminstator.myviewdesign.R;
 
 public class MainActivity extends AppCompatActivity {
     private TextView textView;

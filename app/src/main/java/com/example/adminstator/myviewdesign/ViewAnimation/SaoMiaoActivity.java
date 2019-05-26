@@ -1,4 +1,4 @@
-package com.example.adminstator.myviewdesign;
+package com.example.adminstator.myviewdesign.ViewAnimation;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.adminstator.myviewdesign.R;
 
 public class SaoMiaoActivity extends AppCompatActivity {
     private ImageView imageView1;

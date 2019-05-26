@@ -9,21 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DongTaiZhenActivity">
+        <activity android:name=".InterpolatorOwn.MyInterpolatorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ZhuZhenActivity">
-
+        <activity android:name=".AttrAnimator.ViewAnimationWrongActivity">
         </activity>
-        <activity android:name=".SaoMiaoActivity"></activity>
-        <activity android:name=".JiazaiKuangActivity" />
-        <activity android:name=".DonghuaExampleActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".ScaleActivity" />
+        <activity android:name=".AttrAnimator.AnimatorTestActivity"></activity>
+        <activity android:name=".ViewAnimation.DongTaiZhenActivity" />
+        <activity android:name=".ViewAnimation.ZhuZhenActivity" />
+        <activity android:name=".ViewAnimation.SaoMiaoActivity" />
+        <activity android:name=".ViewAnimation.JiazaiKuangActivity" />
+        <activity android:name=".ViewAnimation.DonghuaExampleActivity" />
+        <activity android:name=".ViewAnimation.MainActivity" />
+        <activity android:name=".ViewAnimation.ScaleActivity" />
     </application>
 
 </manifest>

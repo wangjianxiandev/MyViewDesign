@@ -1,4 +1,4 @@
-package com.example.adminstator.myviewdesign;
+package com.example.adminstator.myviewdesign.ViewAnimation;
 
 import android.graphics.drawable.AnimationDrawable;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import com.example.adminstator.myviewdesign.R;
 
 public class ZhuZhenActivity extends AppCompatActivity {
     private ImageView imageView;

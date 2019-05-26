@@ -1,4 +1,4 @@
-package com.example.adminstator.myviewdesign;
+package com.example.adminstator.myviewdesign.ViewAnimation;
 
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
+
+import com.example.adminstator.myviewdesign.R;
 
 public class JiazaiKuangActivity extends AppCompatActivity {
     private ImageView imageView;

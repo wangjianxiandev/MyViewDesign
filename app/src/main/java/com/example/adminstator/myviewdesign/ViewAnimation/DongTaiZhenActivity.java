@@ -1,10 +1,12 @@
-package com.example.adminstator.myviewdesign;
+package com.example.adminstator.myviewdesign.ViewAnimation;
 
 import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
+
+import com.example.adminstator.myviewdesign.R;
 
 public class DongTaiZhenActivity extends AppCompatActivity {
     private ImageView imageView;

@@ -1,4 +1,4 @@
-package com.example.adminstator.myviewdesign;
+package com.example.adminstator.myviewdesign.ViewAnimation;
 
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +8,8 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.BounceInterpolator;
 import android.view.animation.ScaleAnimation;
 import android.widget.ImageView;
+
+import com.example.adminstator.myviewdesign.R;
 
 public class DonghuaExampleActivity extends AppCompatActivity {
     private ImageView imageView;

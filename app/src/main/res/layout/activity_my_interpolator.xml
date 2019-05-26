@@ -5,19 +5,22 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewAnimation.ScaleActivity">
+    tools:context=".AttrAnimator.ViewAnimationWrongActivity">
     <Button
-        android:id="@+id/btn_scale"
+        android:id="@+id/myInterpolatormove_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="scale"
+        android:padding="10dp"
+        android:text="start"
         android:textSize="18sp"/>
+
+
     <TextView
-        android:id="@+id/scale_text"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="scale"
-        android:background="@android:color/darker_gray"
-        android:layout_gravity="center_horizontal"/>
+        android:id="@+id/myInterpolatortext_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#ffff00"
+        android:text="wjx"/>
 
 </LinearLayout>

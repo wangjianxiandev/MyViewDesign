@@ -1,14 +1,10 @@
-package com.example.adminstator.myviewdesign;
+package com.example.adminstator.myviewdesign.ViewAnimation;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AccelerateInterpolator;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
-import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
 import android.view.animation.AnticipateInterpolator;
 import android.view.animation.AnticipateOvershootInterpolator;
@@ -17,12 +13,12 @@ import android.view.animation.CycleInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.OvershootInterpolator;
-import android.view.animation.RotateAnimation;
-import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.adminstator.myviewdesign.R;
 
 public class ScaleActivity extends AppCompatActivity {
     private static final String TAG = "ScaleActivity";
@@ -91,33 +87,33 @@ public class ScaleActivity extends AppCompatActivity {
                 //插值器
                 TranslateAnimation translateAnimationInter = (TranslateAnimation) AnimationUtils.loadAnimation(ScaleActivity.this, R.anim.translateinter);
 
-//                先快后慢
-//                translateAnimationInter.setInterpolator(new AccelerateDecelerateInterpolator());
+                //先快后慢
+                translateAnimationInter.setInterpolator(new AccelerateDecelerateInterpolator());
 
-//                加速突然停止
-//                translateAnimationInter.setInterpolator(new AccelerateInterpolator());
+                //加速突然停止
+                translateAnimationInter.setInterpolator(new AccelerateInterpolator());
 
-//                减速插值器
-//                translateAnimationInter.setInterpolator(new DecelerateInterpolator());
+                //减速插值器
+                translateAnimationInter.setInterpolator(new DecelerateInterpolator());
 
-//                匀速插值器
-//                translateAnimationInter.setInterpolator(new LinearInterpolator());
+                //匀速插值器
+                translateAnimationInter.setInterpolator(new LinearInterpolator());
 
 
-//                弹跳插值器
-//                translateAnimationInter.setInterpolator(new BounceInterpolator());
+                //弹跳插值器
+                translateAnimationInter.setInterpolator(new BounceInterpolator());
 
-//                反向初始插值器
-//                translateAnimationInter.setInterpolator(new AnticipateInterpolator(4));
+                //反向初始插值器
+                translateAnimationInter.setInterpolator(new AnticipateInterpolator(4));
 
-//                前向结束插值器
-//                translateAnimationInter.setInterpolator(new OvershootInterpolator());
+                //前向结束插值器
+                translateAnimationInter.setInterpolator(new OvershootInterpolator());
 
-//                上述两者结合
-//                translateAnimationInter.setInterpolator(new AnticipateOvershootInterpolator(2,2));
+                //上述两者结合
+                translateAnimationInter.setInterpolator(new AnticipateOvershootInterpolator(2,2));
 
-//                循环插值器
-//                translateAnimationInter.setInterpolator(new CycleInterpolator(1));
+                //循环插值器
+                translateAnimationInter.setInterpolator(new CycleInterpolator(1));
 
 
 
