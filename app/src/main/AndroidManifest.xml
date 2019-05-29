@@ -10,13 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".OwnExample.DropObjectActivity">
+
+        </activity>
+        <activity android:name=".AttrAnimator.ArgbEvaluatorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".AttrAnimator.ArgbEvaluatorActivity">
         </activity>
         <activity android:name=".InterpolatorOwn.MyInterpolatorActivity"></activity>
         <activity android:name=".AttrAnimator.ViewAnimationWrongActivity" />

@@ -27,6 +27,7 @@ public class DropObjectActivity extends AppCompatActivity {
                 doAnimStart();
             }
         });
+
     }
 
     private void doAnimStart() {

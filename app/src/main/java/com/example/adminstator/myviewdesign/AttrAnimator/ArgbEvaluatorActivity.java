@@ -1,6 +1,7 @@
 package com.example.adminstator.myviewdesign.AttrAnimator;
 
 import android.animation.ArgbEvaluator;
+import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,7 +28,8 @@ public class ArgbEvaluatorActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 //                doAnimator();
-                doChangeLetter();
+//                doChangeLetter();
+                doObjectAnimator();
             }
         });
         textView.setOnClickListener(new View.OnClickListener() {
@@ -36,6 +38,12 @@ public class ArgbEvaluatorActivity extends AppCompatActivity {
                 Toast.makeText(ArgbEvaluatorActivity.this, "wjx", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    private void doObjectAnimator() {
+        ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(textView, "alpha", 1,0,1);
+        objectAnimator.setDuration(1000);
+        objectAnimator.start();
     }
 
     private void doChangeLetter() {
