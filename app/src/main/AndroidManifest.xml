@@ -9,17 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OwnExample.DropObjectActivity">
-
-        </activity>
-        <activity android:name=".AttrAnimator.ArgbEvaluatorActivity">
+        <activity android:name=".AnimatorSetTest.ZuheDonghuaActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InterpolatorOwn.MyInterpolatorActivity"></activity>
+        <activity android:name=".OwnExample.ObjectAnimatorFallActivity">
+        </activity>
+        <activity android:name=".OwnExample.DropObjectActivity" />
+        <activity android:name=".AttrAnimator.ArgbEvaluatorActivity"></activity>
+        <activity android:name=".InterpolatorOwn.MyInterpolatorActivity" />
         <activity android:name=".AttrAnimator.ViewAnimationWrongActivity" />
         <activity android:name=".AttrAnimator.AnimatorTestActivity" />
         <activity android:name=".ViewAnimation.DongTaiZhenActivity" />

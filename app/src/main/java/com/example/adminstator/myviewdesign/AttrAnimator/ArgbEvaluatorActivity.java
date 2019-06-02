@@ -41,9 +41,10 @@ public class ArgbEvaluatorActivity extends AppCompatActivity {
     }
 
     private void doObjectAnimator() {
-        ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(textView, "alpha", 1,0,1);
+        ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(textView, "scaleY", 0,3, 1);
         objectAnimator.setDuration(1000);
         objectAnimator.start();
+        textView.setScaleY(1.0f);
     }
 
     private void doChangeLetter() {
