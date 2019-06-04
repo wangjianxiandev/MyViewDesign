@@ -83,6 +83,7 @@ public class ZuheDonghuaActivity extends AppCompatActivity {
         builder.with(objectAnimator2);
         builder.after(objectAnimator3);
         animatorSet.setDuration(1000);
+//        animatorSet.setTarget(textView2);
         animatorSet.start();
         return animatorSet;
     }
