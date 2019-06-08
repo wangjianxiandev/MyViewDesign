@@ -9,7 +9,7 @@ import android.animation.TypeEvaluator;
  * Date: 2019-05-28
  * Time: 21:01
  */
-class CharEvaluator implements TypeEvaluator<Character> {
+public class CharEvaluator implements TypeEvaluator<Character> {
 
 
     @Override

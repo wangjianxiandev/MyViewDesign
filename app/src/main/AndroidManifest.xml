@@ -9,16 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PropertyValuesHolderTest.PropertyActivity">
+        <activity android:name=".PropertyValuesHolderTest.ViewPropertyAnimatorTest.TestByActivity"></activity>
+        <activity android:name=".PropertyValuesHolderTest.KeyframeTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AnimatorXML.AnimatorXmlActivity">
-        </activity>
-        <activity android:name=".PathCartoon.PathDongHuaActivity"></activity>
+        <activity android:name=".PropertyValuesHolderTest.PropertyActivity"></activity>
+        <activity android:name=".AnimatorXML.AnimatorXmlActivity" />
+        <activity android:name=".PathCartoon.PathDongHuaActivity" />
         <activity android:name=".AnimatorSetTest.ZuheDonghuaActivity" />
         <activity android:name=".OwnExample.ObjectAnimatorFallActivity" />
         <activity android:name=".OwnExample.DropObjectActivity" />
