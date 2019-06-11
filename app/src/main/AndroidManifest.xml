@@ -9,16 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DongHuaJinJie.PathMeasureActivity">
+        <activity android:name=".DongHuaJinJie.SVGExample.SVG_First_Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AnimateLayoutChangesTest.ButtonAddActivity">
+        <activity android:name=".DongHuaJinJie.PathMeasureActivity">
+
         </activity>
-        <activity android:name=".PropertyValuesHolderTest.ViewPropertyAnimatorTest.TestByActivity"></activity>
+        <activity android:name=".AnimateLayoutChangesTest.ButtonAddActivity"></activity>
+        <activity android:name=".PropertyValuesHolderTest.ViewPropertyAnimatorTest.TestByActivity" />
         <activity android:name=".PropertyValuesHolderTest.KeyframeTestActivity" />
         <activity android:name=".PropertyValuesHolderTest.PropertyActivity" />
         <activity android:name=".AnimatorXML.AnimatorXmlActivity" />
