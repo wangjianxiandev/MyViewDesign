@@ -7,7 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".huitujinjie.jianbian.JianBianTestActivity">
 
-    <com.example.adminstator.myviewdesign.huitujinjie.jianbian.jianbianwenzi.JianBianWenZi
-        android:layout_width="fill_parent"
+    <!--<com.example.adminstator.myviewdesign.huitujinjie.jianbian.ShanGuangwenzi.ShanGuangwenzi-->
+
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="24dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:text="欢迎来学习WJX的博客"/>-->
+
+    <com.example.adminstator.myviewdesign.huitujinjie.jianbian.RadialGradientTest.RadialGRadientView
+        android:layout_width="200dp"
         android:layout_height="200dp"/>
 </LinearLayout>
