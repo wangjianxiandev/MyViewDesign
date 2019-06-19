@@ -1,4 +1,4 @@
-package com.example.adminstator.myviewdesign.huitujinjie.jianbian;
+package com.example.adminstator.myviewdesign.huitujinjie.jianbian.jianbianwenzi;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -14,14 +14,14 @@ import android.view.View;
  *
  * @author: 王拣贤
  * @date: 2019/06/19
- * Time: 18:00
+ * Time: 18:31
  */
-public class JianBian extends View {
+public class JianBianWenZi extends View {
     private Paint paint;
-    public JianBian(Context context, AttributeSet attrs) {
+    public JianBianWenZi(Context context, AttributeSet attrs) {
         super(context, attrs);
+        setLayerType(LAYER_TYPE_SOFTWARE,  null);
         paint = new Paint();
-        setLayerType(LAYER_TYPE_SOFTWARE ,null);
     }
 
     @Override
@@ -29,8 +29,8 @@ public class JianBian extends View {
         super.onDraw(canvas);
         int[] colors = {0xffff0000, 0xff00ff00, 0xff0000ff,0xffffff00, 0xff00ffff};
         float[] pos = {0f, 0.2f, 0.4f, 0.6f, 1.0f};
-
-        paint.setShader(new LinearGradient(0, getHeight()/2, getWidth()/2, getHeight()/2, colors,  pos, Shader.TileMode.CLAMP));
-        canvas.drawRect(0, 0, getWidth(), getHeight(), paint);
+        paint.setShader(new LinearGradient(0, 0, getWidth()/2, getHeight()/2, colors, pos, Shader.TileMode.MIRROR));
+        paint.setTextSize(120);
+        canvas.drawText("感谢学习WJX的Blog",0, 200, paint);
     }
 }

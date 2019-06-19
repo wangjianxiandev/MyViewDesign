@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".huitujinjie.jianbian.JianBianTestActivity">
 
-    <com.example.adminstator.myviewdesign.huitujinjie.jianbian.JianBian
+    <com.example.adminstator.myviewdesign.huitujinjie.jianbian.jianbianwenzi.JianBianWenZi
         android:layout_width="fill_parent"
         android:layout_height="200dp"/>
 </LinearLayout>
