@@ -9,16 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".huitujinjie.ShaderTest.ShaderTextActivity">
+        <activity android:name=".huitujinjie.jianbian.JianBianTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".huitujinjie.yinying.BitmapShadowActivity">
+        <activity android:name=".huitujinjie.ShaderTest.buguizetouxiang.HeadImageActivity">
         </activity>
-        <activity android:name=".huitujinjie.faguang.BlurTestActivity"></activity>
+        <activity android:name=".huitujinjie.ShaderTest.WangYuanJing.WangYuanJingActivity"></activity>
+        <activity android:name=".huitujinjie.ShaderTest.ShaderTextActivity" />
+        <activity android:name=".huitujinjie.yinying.BitmapShadowActivity" />
+        <activity android:name=".huitujinjie.faguang.BlurTestActivity" />
         <activity android:name=".huitujinjie.TextShadowTest.TextShadowActivity" />
         <activity android:name=".huitujinjie.BeiJiAiActivity" />
         <activity android:name=".huiturumen.DrawTextTestActivity" />

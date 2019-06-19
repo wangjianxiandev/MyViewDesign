@@ -33,6 +33,10 @@ public class BitmapShaderView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawRect(0, 0 , getWidth(), getHeight(),paint);
+        float left = getWidth() / 3;
+        float top = getHeight() / 3;
+        float right = getWidth() * 2 /3;
+        float bottom = getHeight() * 2/3;
+        canvas.drawRect(left, top, right, bottom,paint);
     }
 }
