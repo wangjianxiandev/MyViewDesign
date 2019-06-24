@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".hunhemoshi.TestActivity">
 
-    <com.example.adminstator.myviewdesign.hunhemoshi.PorterDuffXfermodeView
-        android:layout_height="200dp"
-        android:layout_width="200dp"/>
+    <com.example.adminstator.myviewdesign.hunhemoshi.PorterDuffXfermodeViewc
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
 </LinearLayout>

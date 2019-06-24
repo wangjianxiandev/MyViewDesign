@@ -57,7 +57,7 @@ public class PorterDuffXfermodeView extends View {
         super.onDraw(canvas);
         int layId = canvas.saveLayer(0, 0, getWidth(), getHeight(), null, Canvas.ALL_SAVE_FLAG);
         canvas.drawBitmap(dstBmp, 0, 0, paint);
-        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SCREEN));
+        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_ATOP));
         canvas.drawBitmap(srcBmp, width/2, height/2, paint);
         paint.setXfermode(null);
         canvas.restoreToCount(layId);
