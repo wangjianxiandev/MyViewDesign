@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".tuceng.TuCengActivity">
 
-    <com.example.adminstator.myviewdesign.tuceng.huabuyutuceng.MATRIX_SAVE_FLAG_View
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"/>
+    <com.example.adminstator.myviewdesign.tuceng.huifuhuabu.RestoreToCountView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
 </LinearLayout>
