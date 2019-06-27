@@ -9,16 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".tuceng.TuCengActivity">
+        <activity android:name=".AndroidHuabu.ShapeExample.ShapeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".hunhemoshi.TestActivity">
+        <activity android:name=".AndroidHuabu.AndroidHuaBuActivity">
         </activity>
-        <activity android:name=".huitujinjie.jianbian.JianBianTestActivity"></activity>
+        <activity android:name=".tuceng.TuCengActivity"></activity>
+        <activity android:name=".hunhemoshi.TestActivity" />
+        <activity android:name=".huitujinjie.jianbian.JianBianTestActivity" />
         <activity android:name=".huitujinjie.ShaderTest.buguizetouxiang.HeadImageActivity" />
         <activity android:name=".huitujinjie.ShaderTest.WangYuanJing.WangYuanJingActivity" />
         <activity android:name=".huitujinjie.ShaderTest.ShaderTextActivity" />
