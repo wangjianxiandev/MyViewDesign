@@ -1,6 +1,7 @@
 package com.example.adminstator.myviewdesign.AndroidHuabu.ShapeExample;
 
 import android.content.Context;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Path;
@@ -51,30 +52,30 @@ public class ShapeView extends View {
 //        shapeDrawable.setBounds(new Rect(50, 50, 200, 100));
 //        //获取画笔，并将整个Drawable填充为黄色
 
-//        float[] outerRadii = new float[]{12, 12, 12, 12, 0, 0, 0, 0};
-//        RectF inset = new RectF(6,  6, 6, 6);
-//        float[] innerRadii = new float[]{50, 12, 0, 0, 12, 50, 0, 0};
-//        shapeDrawable = new ShapeDrawable(new RoundRectShape(outerRadii, inset, innerRadii));
-//        Path path = new Path();
-//        //注意这里此时的单位是份
-//        path.moveTo(0, 0);
-//        path.lineTo(100, 0);
-//        path.lineTo(100, 100);
-//        path.lineTo(0, 100);
-//        path.close();
-//        //首先我们要知道这里的单位是份的概念而不是px，所以为了对比，我们将shapeDrawable和画布大小设为一致
-//        // 开始将shape 100， 100 可以发现它填满了控件如果使用的是px当然是不可能将其填满的，
-//        // 将ShapeDrawable的高设置成200，则原来的只能占1/2，所以只能展示为控件的一半
-//        shapeDrawable = new ShapeDrawable(new PathShape(path, 100, 200));
+        float[] outerRadii = new float[]{12, 12, 12, 12, 0, 0, 0, 0};
+        RectF inset = new RectF(6,  6, 6, 6);
+        float[] innerRadii = new float[]{50, 12, 0, 0, 12, 50, 0, 0};
+        shapeDrawable = new ShapeDrawable(new RoundRectShape(outerRadii, inset, innerRadii));
+        Path path = new Path();
+        //注意这里此时的单位是份
+        path.moveTo(0, 0);
+        path.lineTo(100, 0);
+        path.lineTo(100, 100);
+        path.lineTo(0, 100);
+        path.close();
+        //首先我们要知道这里的单位是份的概念而不是px，所以为了对比，我们将shapeDrawable和画布大小设为一致
+        // 开始将shape 100， 100 可以发现它填满了控件如果使用的是px当然是不可能将其填满的，
+        // 将ShapeDrawable的高设置成200，则原来的只能占1/2，所以只能展示为控件的一半
+        shapeDrawable = new ShapeDrawable(new PathShape(path, 200, 200));
 //        shapeDrawable.setBounds(new Rect(0, 0, 250, 150));
 //        shapeDrawable.getPaint().setColor(Color.BLUE);
-        Rect rect1 = new Rect(50, 0, 90, 150);
-        Rect rect2 = new Rect(0, 50, 250, 100);
-        Region region1 = new Region(rect1);
-        Region region2 = new Region(rect2);
-
-        region1.op(region2, Region.Op.XOR);
-        shapeDrawable = new ShapeDrawable(new OwnShapeView(region1));
+//        Rect rect1 = new Rect(50, 0, 90, 150);
+//        Rect rect2 = new Rect(0, 50, 250, 100);
+//        Region region1 = new Region(rect1);
+//        Region region2 = new Region(rect2);
+//
+//        region1.op(region2, Region.Op.XOR);
+//        shapeDrawable = new ShapeDrawable(new OwnShapeView(region1));
         shapeDrawable.setBounds(new Rect(0, 0, 250, 150));
         shapeDrawable.getPaint().setColor(Color.GRAY);
     }

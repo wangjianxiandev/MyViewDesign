@@ -5,9 +5,10 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AndroidHuabu.ShapeExample.ShapeActivity">
+    tools:context=".AndroidHuabu.BitmapSuoFang.BitmapSuoFangActivity">
 
-    <com.example.adminstator.myviewdesign.AndroidHuabu.ShapeExample.TelescopeView
+    <ImageView
+        android:id="@+id/iv"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
