@@ -9,18 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AndroidHuabu.SurfaceViewTestActivity">
+        <activity android:name=".Juzhenyunsuan.SaleMatrixActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Juzhenyunsuan.MatrixActivity">
 
         </activity>
-        <activity android:name=".AndroidHuabu.BitmapStaticBuild.zongheshili.shuiyin.ShuiYInActivity">
-
-        </activity>
-        <activity android:name=".AndroidHuabu.BitmapStaticBuild.zongheshili.StrokeImageActivity"></activity>
+        <activity android:name=".AndroidHuabu.SurfaceViewTestActivity"></activity>
+        <activity android:name=".AndroidHuabu.BitmapStaticBuild.zongheshili.shuiyin.ShuiYInActivity" />
+        <activity android:name=".AndroidHuabu.BitmapStaticBuild.zongheshili.StrokeImageActivity" />
         <activity android:name=".AndroidHuabu.BitmapStaticBuild.AlphaActivity" />
         <activity android:name=".AndroidHuabu.BitmapStaticBuild.BitmapStaticActivity" />
         <activity android:name=".AndroidHuabu.BitmapSuoFang.BitmapSuoFangActivity" />
