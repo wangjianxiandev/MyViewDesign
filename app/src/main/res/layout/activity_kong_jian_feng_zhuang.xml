@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrstest = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AndroidHuabu.fengzhuangkongjian.KongJianFengZhuangActivity">
+
+    <com.example.adminstator.myviewdesign.AndroidHuabu.fengzhuangkongjian.MyTextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        attrstest:header="@drawable/dog"
+        attrstest:headerHeight="300dp"
+        attrstest:headerVisibleHeight="100dp"
+        attrstest:age="young"/>
+</LinearLayout>
