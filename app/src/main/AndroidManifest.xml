@@ -9,16 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AndroidHuabu.fengzhuangkongjian.KongJianFengZhuangActivity">
+        <activity android:name=".SweepGradientTest.SweepGradientActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Juzhenyunsuan.SaleMatrixActivity">
+        <activity android:name=".kongjiangaojishuxing.gesturedetectortest.GEstureDetectorTestActivity">
         </activity>
-        <activity android:name=".Juzhenyunsuan.MatrixActivity"></activity>
+        <activity android:name=".fengzhuangkongjian.FlowLayoutTest.FlowLayoutTestActivity"></activity>
+        <activity android:name=".fengzhuangkongjian.ViewHuiZhi.ViewDrawActivity" />
+        <activity android:name=".fengzhuangkongjian.KongJianFengZhuangActivity" />
+        <activity android:name=".Juzhenyunsuan.SaleMatrixActivity" />
+        <activity android:name=".Juzhenyunsuan.MatrixActivity" />
         <activity android:name=".AndroidHuabu.SurfaceViewTestActivity" />
         <activity android:name=".AndroidHuabu.BitmapStaticBuild.zongheshili.shuiyin.ShuiYInActivity" />
         <activity android:name=".AndroidHuabu.BitmapStaticBuild.zongheshili.StrokeImageActivity" />

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fengzhuangkongjian.FlowLayoutTest.FlowLayoutTestActivity">
+
+    <com.example.adminstator.myviewdesign.fengzhuangkongjian.ViewHuiZhi.MyLinLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            style="@style/text_flag_01"
+            android:background="@drawable/flag_03"
+            android:text="Welcome"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            style="@style/text_flag_01"
+            android:background="@drawable/flag_03"
+            android:textColor="@android:color/white"
+            android:text="WJX"/>
+
+
+        <TextView
+            style="@style/text_flag_01"
+            android:background="@drawable/flag_03"
+            android:textColor="@android:color/white"
+            android:text="WJX1"/>
+
+
+        <TextView
+            style="@style/text_flag_01"
+            android:background="@drawable/flag_03"
+            android:textColor="@android:color/white"
+            android:text="WJX2"/>
+
+        <TextView
+            style="@style/text_flag_01"
+            android:background="@drawable/flag_03"
+            android:textColor="@android:color/white"
+            android:text="WJX3"/>
+
+        <TextView
+            style="@style/text_flag_01"
+            android:background="@drawable/flag_03"
+            android:textColor="@android:color/white"
+            android:text="WJX4"/>
+
+
+        <TextView
+            style="@style/text_flag_01"
+            android:background="@drawable/flag_03"
+            android:textColor="@android:color/white"
+            android:text="WJX5"/>
+    </com.example.adminstator.myviewdesign.fengzhuangkongjian.ViewHuiZhi.MyLinLayout>
+</LinearLayout>

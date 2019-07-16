@@ -1,10 +1,8 @@
-package com.example.adminstator.myviewdesign.AndroidHuabu.fengzhuangkongjian;
+package com.example.adminstator.myviewdesign.fengzhuangkongjian;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
 import com.example.adminstator.myviewdesign.R;
 

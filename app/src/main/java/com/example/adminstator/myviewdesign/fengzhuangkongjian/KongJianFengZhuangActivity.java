@@ -1,16 +1,15 @@
-package com.example.adminstator.myviewdesign.AndroidHuabu;
+package com.example.adminstator.myviewdesign.fengzhuangkongjian;
 
-import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.adminstator.myviewdesign.R;
 
-public class SurfaceViewTestActivity extends AppCompatActivity {
+public class KongJianFengZhuangActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_surface_view_test);
+        setContentView(R.layout.activity_kong_jian_feng_zhuang);
     }
 }

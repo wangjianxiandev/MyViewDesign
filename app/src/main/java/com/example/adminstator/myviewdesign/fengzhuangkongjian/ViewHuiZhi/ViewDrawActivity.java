@@ -1,15 +1,15 @@
-package com.example.adminstator.myviewdesign.AndroidHuabu.fengzhuangkongjian;
+package com.example.adminstator.myviewdesign.fengzhuangkongjian.ViewHuiZhi;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.adminstator.myviewdesign.R;
 
-public class KongJianFengZhuangActivity extends AppCompatActivity {
+public class ViewDrawActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kong_jian_feng_zhuang);
+        setContentView(R.layout.activity_view_draw);
     }
 }
