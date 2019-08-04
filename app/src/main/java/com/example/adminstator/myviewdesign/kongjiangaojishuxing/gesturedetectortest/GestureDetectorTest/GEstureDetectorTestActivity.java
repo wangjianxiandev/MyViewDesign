@@ -1,7 +1,6 @@
-package com.example.adminstator.myviewdesign.kongjiangaojishuxing.gesturedetectortest;
+package com.example.adminstator.myviewdesign.kongjiangaojishuxing.gesturedetectortest.GestureDetectorTest;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MotionEvent;

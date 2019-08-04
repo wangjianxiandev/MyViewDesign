@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kongjiangaojishuxing.gesturedetectortest.WindowManagerDemo.WindowDemoActivity">
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD_VIEW"/>
+
+    <Button
+        android:id="@+id/rem_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REM_VIEW"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+</LinearLayout>

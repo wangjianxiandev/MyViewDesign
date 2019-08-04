@@ -41,6 +41,7 @@ public class SweepGradientDemo extends View {
         paint.setAntiAlias(true);
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeCap(Paint.Cap.ROUND);
+
         SweepGradient sweepGradient = new SweepGradient((getMeasuredWidth() - 40)/2, (getMeasuredHeight() - 40)/2, new int[]{Color.RED, Color.GREEN, Color.BLUE}, null);
         Matrix matrix = new Matrix();
         matrix.setRotate(180, getMeasuredWidth()/2, getMeasuredHeight()/2);

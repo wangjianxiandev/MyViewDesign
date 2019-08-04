@@ -1,4 +1,4 @@
-package com.example.adminstator.myviewdesign.kongjiangaojishuxing.gesturedetectortest;
+package com.example.adminstator.myviewdesign.kongjiangaojishuxing.gesturedetectortest.GestureDetectorTest;
 
 /**
  * Created with Android Studio.

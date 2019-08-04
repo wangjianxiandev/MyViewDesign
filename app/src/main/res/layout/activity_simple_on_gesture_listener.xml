@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".kongjiangaojishuxing.gesturedetectortest.GestureDetectorTest.GEstureDetectorTestActivity">
+    android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tv_gesture"
+        android:id="@+id/tv_simple_gesture"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="50dp"
