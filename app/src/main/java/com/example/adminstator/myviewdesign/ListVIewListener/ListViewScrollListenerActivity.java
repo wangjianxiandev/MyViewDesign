@@ -3,9 +3,11 @@ package com.example.adminstator.myviewdesign.ListVIewListener;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.AbsListView;
 import android.widget.Adapter;
 import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.example.adminstator.myviewdesign.R;
@@ -18,7 +20,7 @@ public class ListViewScrollListenerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view_scroll_listener);
         listView = (ListView)findViewById(R.id.listview);
-        String[] arr = new String[]{
+        String[] arr ={
                 "aaa",
                 "bbb",
                 "ccc",
@@ -30,9 +32,9 @@ public class ListViewScrollListenerActivity extends AppCompatActivity {
         listView.setOnScrollListener(new ListView.OnScrollListener() {
             /**
              * 监听ListView的滑动状态的改变，滑动存在三种状态
-             * SCROLL_STATE_TOUCH_SCROLL：手指正在拖动ListVIew
-             * SCROLL_STATE_FLING：ListView正在自由滑动
-             * SCROLL_STATE_IDLE：ListView滑动停止
+             * SCROLL_STATE_IDLE：ListView滑动停止 0
+             * SCROLL_STATE_TOUCH_SCROLL：手指正在拖动ListVIew 1
+             * SCROLL_STATE_FLING：ListView正在自由滑动 2
              * @param view
              * @param scrollState
              */
@@ -52,5 +54,18 @@ public class ListViewScrollListenerActivity extends AppCompatActivity {
                 Log.d("WJX", "firstVisibleItem:"+firstVisibleItem+" "+"visibleItemCount:"+visibleItemCount+" "+"totalItemCount:"+totalItemCount);
             }
         });
+    }
+    public int calItemHeight(ListView listView){
+        int totalHeight = 0;
+        ListAdapter listAdapter = listView.getAdapter();
+        if(listAdapter == null){
+            return 0;
+        }
+        for(int i = 0, size = listAdapter.getCount(); i < size; i++){
+            View item = listAdapter.getView(i, null, listView);
+            item.measure(0, 0);
+            totalHeight += item.getMeasuredHeight();
+        }
+        return  totalHeight;
     }
 }
