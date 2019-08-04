@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListVIewListener.ScrollerListViewConflictActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/showin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/listviewscroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#f00"
+                android:dividerHeight="2px"
+                android:headerDividersEnabled="false">
+            </ListView>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textSize="18sp"/>
+    </ScrollView>
+</LinearLayout>

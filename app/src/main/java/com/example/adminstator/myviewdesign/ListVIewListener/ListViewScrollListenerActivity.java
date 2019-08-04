@@ -55,7 +55,7 @@ public class ListViewScrollListenerActivity extends AppCompatActivity {
             }
         });
     }
-    public int calItemHeight(ListView listView){
+    private int calItemHeight(ListView listView){
         int totalHeight = 0;
         ListAdapter listAdapter = listView.getAdapter();
         if(listAdapter == null){
@@ -67,5 +67,6 @@ public class ListViewScrollListenerActivity extends AppCompatActivity {
             totalHeight += item.getMeasuredHeight();
         }
         return  totalHeight;
+
     }
 }
