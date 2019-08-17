@@ -12,11 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".DrawableBitmapTranslate.DrawableBitmapActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".EventDispatch.EventDispatchActivity"></activity>
         <activity android:name=".ShortCutsTest.ShortCutsTestActivity">
@@ -27,7 +23,13 @@
         </activity>
         <activity android:name=".ListVIewListener.ScrollerListViewConflictActivity" />
         <activity android:name=".ListVIewListener.ListViewScrollListenerActivity" />
-        <activity android:name=".CircleBitmapTest.Demo01Activity"></activity>
+        <activity android:name=".CircleBitmapTest.Demo01Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".kongjiangaojishuxing.gesturedetectortest.WindowManagerDemo.WindowDemoActivity" />
         <activity android:name=".kongjiangaojishuxing.gesturedetectortest.GestureDetectorTest.SimpleOnGestureListenerActivity" />
         <activity android:name=".CircleImageViewTest.CircleImageViewTestActivity" />
