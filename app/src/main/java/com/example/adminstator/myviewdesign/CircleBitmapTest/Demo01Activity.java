@@ -10,6 +10,7 @@ import android.graphics.Path;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.Shader;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -23,6 +24,7 @@ public class Demo01Activity extends AppCompatActivity {
     private ImageView demo02;
     private ImageView demo03;
     private ImageView demo04;
+    private ImageView demo05;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,7 @@ public class Demo01Activity extends AppCompatActivity {
         demo02 = (ImageView)findViewById(R.id.demo02);
         demo03 = (ImageView)findViewById(R.id.demo03);
         demo04 = (ImageView)findViewById(R.id.demo04);
+        demo05 = (ImageView) findViewById(R.id.demo05);
         Bitmap bitmapsrc = BitmapFactory.decodeResource(getResources(), R.drawable.niuniu);
         Bitmap bitmapres1 = createRoundPhoto1(bitmapsrc);
         demo01.setImageBitmap(bitmapres1);
@@ -43,6 +46,10 @@ public class Demo01Activity extends AppCompatActivity {
 
         Bitmap bitmapres4 = createRoundScalePhoto(bitmapsrc, 330);
         demo04.setImageBitmap(bitmapres4);
+//
+//        Bitmap bitmapres5 = createRoundPhoto4(bitmapsrc, 330);
+//        demo05.setImageBitmap(bitmapres5);
+
 
 
 
@@ -85,12 +92,29 @@ public class Demo01Activity extends AppCompatActivity {
         return circleBitmap;
     }
 
+//    private Bitmap createRoundPhoto4(Bitmap bitmap, int imageViewSize){
+//        if(bitmap == null){
+//            return null;
+//        }
+//        float scaleSize = ((float) imageViewSize) / bitmap.getWidth();
+//        Matrix matrix = new Matrix();
+//        matrix.setScale(scaleSize, scaleSize);
+//        Bitmap output = Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, false);
+//        Canvas canvas = new Canvas(output);
+//        Paint paint = new Paint();
+//        paint.setAntiAlias(true);
+//        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.DST_OUT));
+//        canvas.drawCircle(imageViewSize / 2.0f, imageViewSize / 2.0f, imageViewSize / 2.0f, paint);
+//        canvas.scale(1 / scaleSize, 1/ scaleSize, imageViewSize / 2/0f, imageViewSize / 2.0f);
+//        bitmap.recycle();
+//        return output;
+//    }
+
     private Bitmap createRoundScalePhoto(Bitmap bitmap, int imageViewSize){
         if(bitmap == null){
             return null;
         }
         int size = Math.min(bitmap.getWidth(), bitmap.getHeight());
-        Log.d("WJX", size + " ");
         Bitmap output = Bitmap.createBitmap(imageViewSize, imageViewSize, Bitmap.Config.ARGB_8888);
         float scaleNum = 0;
         if(size != 0) {
