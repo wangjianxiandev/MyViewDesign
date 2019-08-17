@@ -49,11 +49,7 @@ public class Demo01Activity extends AppCompatActivity {
 //
 //        Bitmap bitmapres5 = createRoundPhoto4(bitmapsrc, 330);
 //        demo05.setImageBitmap(bitmapres5);
-
-
-
-
-
+        
     }
     private Bitmap createRoundPhoto1(Bitmap bitmap){
         int width = bitmap.getWidth();

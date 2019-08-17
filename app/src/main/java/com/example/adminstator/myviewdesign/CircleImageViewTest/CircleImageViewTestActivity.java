@@ -9,6 +9,9 @@ import com.example.adminstator.myviewdesign.R;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
+/**
+ * 使用circleImageView实现圆形头像
+ */
 public class CircleImageViewTestActivity extends AppCompatActivity {
 
     private CircleImageView circleImageView;
