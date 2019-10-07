@@ -32,10 +32,12 @@ public class Demo01Activity extends AppCompatActivity {
     private ImageView demo04;
     private ImageView demo05;
     private ImageView demo06;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demo01);
+//        getWindow().getDecorView().setPadding(100, 100, 100, 100);
         demo01 = findViewById(R.id.demo01);
         demo02 = findViewById(R.id.demo02);
         demo03 = findViewById(R.id.demo03);
@@ -61,7 +63,7 @@ public class Demo01Activity extends AppCompatActivity {
 
         Bitmap bitmapres6 = createRoundScalePhoto(bitmapsrc, 330);
         demo06.setImageBitmap(bitmapres6);
-        
+
     }
 
     /**
@@ -71,7 +73,7 @@ public class Demo01Activity extends AppCompatActivity {
      * @param bitmap
      * @return
      */
-    private Bitmap createRoundPhoto1(Bitmap bitmap){
+    private Bitmap createRoundPhoto1(Bitmap bitmap) {
         int width = bitmap.getWidth();
         Paint paint = new Paint();
         paint.setAntiAlias(true);
@@ -82,13 +84,14 @@ public class Demo01Activity extends AppCompatActivity {
         canvas.drawBitmap(bitmap, 0, 0, paint);
         return circleBitmap;
     }
+
     /**
      * 从绘制圆角矩形的方法演变而来，效果：边缘存在锯齿
      *
      * @param bitmap
      * @return
      */
-    private Bitmap createRoundPhoto2(Bitmap bitmap){
+    private Bitmap createRoundPhoto2(Bitmap bitmap) {
         int size = Math.min(bitmap.getWidth(), bitmap.getHeight());
         Bitmap circleBitmap = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(circleBitmap);
@@ -98,7 +101,7 @@ public class Demo01Activity extends AppCompatActivity {
         RectF rectF = new RectF(rect);
         paint.setColor(Color.RED);
         paint.setAntiAlias(true);
-        canvas.drawCircle( size / 2, size / 2, size / 2, paint);
+        canvas.drawCircle(size / 2, size / 2, size / 2, paint);
         Rect src = new Rect(0, 0, size, size);
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
         canvas.drawBitmap(bitmap, src, rectF, paint);
@@ -111,7 +114,7 @@ public class Demo01Activity extends AppCompatActivity {
      * @param bitmap
      * @return
      */
-    private Bitmap createRoundPhoto3(Bitmap bitmap){
+    private Bitmap createRoundPhoto3(Bitmap bitmap) {
         int width = bitmap.getWidth();
         Paint paint = new Paint();
         PaintFlagsDrawFilter paintFlagsDrawFilter = new PaintFlagsDrawFilter(0, Paint.ANTI_ALIAS_FLAG | Paint.FILTER_BITMAP_FLAG);
@@ -120,7 +123,7 @@ public class Demo01Activity extends AppCompatActivity {
         Bitmap circleBitmap = Bitmap.createBitmap(width, width, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(circleBitmap);
         Path path = new Path();
-        path.addCircle(width/2, width/2, width/2, Path.Direction.CW);
+        path.addCircle(width / 2, width / 2, width / 2, Path.Direction.CW);
         canvas.clipPath(path);
         //对canvas设置抗锯齿的滤镜，防止变化canvas引起画质降低
         canvas.setDrawFilter(paintFlagsDrawFilter);
@@ -136,7 +139,7 @@ public class Demo01Activity extends AppCompatActivity {
      * @param bitmap
      * @return
      */
-    private Bitmap createRoundPhoto4(Bitmap bitmap){
+    private Bitmap createRoundPhoto4(Bitmap bitmap) {
         int width = bitmap.getWidth();
         BitmapShader bitmapShader = new BitmapShader(bitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
         Paint paint = new Paint();
@@ -144,10 +147,9 @@ public class Demo01Activity extends AppCompatActivity {
         Bitmap circleBitmap = Bitmap.createBitmap(width, width, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(circleBitmap);
         paint.setShader(bitmapShader);
-        canvas.drawCircle(width/2, width/2, width/2, paint);
+        canvas.drawCircle(width / 2, width / 2, width / 2, paint);
         return circleBitmap;
     }
-
 
 
     /**
@@ -157,8 +159,8 @@ public class Demo01Activity extends AppCompatActivity {
      * @param imageViewSize
      * @return
      */
-    private Bitmap createRoundPhoto5(Bitmap bitmap, int imageViewSize){
-        if(bitmap == null){
+    private Bitmap createRoundPhoto5(Bitmap bitmap, int imageViewSize) {
+        if (bitmap == null) {
             return null;
         }
         float scaleSize = ((float) imageViewSize) / bitmap.getWidth();
@@ -174,7 +176,7 @@ public class Demo01Activity extends AppCompatActivity {
         canvas.drawCircle(scaleRes.getWidth() / 2.0f, scaleRes.getWidth() / 2.0f, scaleRes.getWidth() / 2.0f, paint);
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
         canvas.drawBitmap(scaleRes, 0, 0, paint);
-        canvas.scale(1 / scaleSize, 1/ scaleSize, scaleRes.getWidth() / 2.0f, scaleRes.getWidth() / 2.0f);
+        canvas.scale(1 / scaleSize, 1 / scaleSize, scaleRes.getWidth() / 2.0f, scaleRes.getWidth() / 2.0f);
         return output;
     }
 
@@ -185,27 +187,27 @@ public class Demo01Activity extends AppCompatActivity {
      * @param imageViewSize
      * @return
      */
-    private Bitmap createRoundScalePhoto(Bitmap bitmap, int imageViewSize){
-        if(bitmap == null){
+    private Bitmap createRoundScalePhoto(Bitmap bitmap, int imageViewSize) {
+        if (bitmap == null) {
             return null;
         }
         int size = Math.min(bitmap.getWidth(), bitmap.getHeight());
         Bitmap output = Bitmap.createBitmap(imageViewSize, imageViewSize, Bitmap.Config.ARGB_8888);
         float scaleNum = 0;
-        if(size != 0) {
+        if (size != 0) {
             scaleNum = imageViewSize / size;
         }
         float scaleNumReciprocal = size / imageViewSize;
         Paint paint = new Paint();
         paint.setAntiAlias(true);
-        BitmapShader bitmapShader = new BitmapShader(bitmap , Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
+        BitmapShader bitmapShader = new BitmapShader(bitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
         Matrix matrix = new Matrix();
         matrix.setScale(scaleNum, scaleNum);
         bitmapShader.setLocalMatrix(matrix);
         paint.setShader(bitmapShader);
         Canvas canvas = new Canvas(output);
         canvas.drawCircle(imageViewSize / 2.0f, imageViewSize / 2.0f, imageViewSize / 2.0f, paint);
-        canvas.scale(scaleNumReciprocal, scaleNumReciprocal, imageViewSize / 2/0f, imageViewSize / 2.0f);
+        canvas.scale(scaleNumReciprocal, scaleNumReciprocal, imageViewSize / 2 / 0f, imageViewSize / 2.0f);
         bitmap.recycle();
         return output;
     }

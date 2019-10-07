@@ -15,11 +15,12 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class CircleImageViewTestActivity extends AppCompatActivity {
 
     private CircleImageView circleImageView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_circle_image_view_test);
-        circleImageView = (CircleImageView)findViewById(R.id.circle_image);
+        circleImageView = (CircleImageView) findViewById(R.id.circle_image);
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.androidfirst);
         circleImageView.setImageBitmap(bitmap);
 //        circleImageView.setImageResource(R.drawable.androidfirst);

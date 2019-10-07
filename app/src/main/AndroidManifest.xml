@@ -8,13 +8,24 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:logo="@drawable/niuniu"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DrawableBitmapTranslate.DrawableBitmapActivity">
+        <activity android:name=".HeartBeiJiAi.HeartBeijiAIActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".EventDispatch.EventDispatchActivity"></activity>
+        <activity android:name=".AppbarTest.ActionBarActivity"></activity>
+        <activity android:name=".ViewStubTest.ViewStubActivity" />
+        <activity android:name=".LionTest.LionTestActivity" />
+        <activity android:name=".AppbarTest.AppbarTestActivity" />
+        <activity android:name=".ListVIewListener.ListViewAddHeaderTest.ListViewAddHeaderActivity" />
+        <activity android:name=".DrawableBitmapTranslate.DrawableBitmapActivity" />
+        <activity android:name=".EventDispatch.EventDispatchActivity" />
         <activity android:name=".ShortCutsTest.ShortCutsTestActivity">
 
             <!-- <meta-data -->
@@ -23,13 +34,7 @@
         </activity>
         <activity android:name=".ListVIewListener.ScrollerListViewConflictActivity" />
         <activity android:name=".ListVIewListener.ListViewScrollListenerActivity" />
-        <activity android:name=".CircleBitmapTest.Demo01Activity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".CircleBitmapTest.Demo01Activity" />
         <activity android:name=".kongjiangaojishuxing.gesturedetectortest.WindowManagerDemo.WindowDemoActivity" />
         <activity android:name=".kongjiangaojishuxing.gesturedetectortest.GestureDetectorTest.SimpleOnGestureListenerActivity" />
         <activity android:name=".CircleImageViewTest.CircleImageViewTestActivity" />

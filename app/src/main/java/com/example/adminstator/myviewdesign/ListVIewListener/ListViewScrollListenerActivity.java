@@ -15,17 +15,21 @@ import com.example.adminstator.myviewdesign.R;
 public class ListViewScrollListenerActivity extends AppCompatActivity {
 
     private ListView listView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view_scroll_listener);
-        listView = (ListView)findViewById(R.id.listview);
-        String[] arr ={
+        listView = (ListView) findViewById(R.id.listview);
+        String[] arr = {
                 "aaa",
                 "bbb",
                 "ccc",
                 "ddd",
-                "eee"
+                "eee",
+                "fff",
+                "ggg",
+                "hhh"
         };
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.array_item, arr);
         listView.setAdapter(arrayAdapter);
@@ -40,7 +44,7 @@ public class ListViewScrollListenerActivity extends AppCompatActivity {
              */
             @Override
             public void onScrollStateChanged(AbsListView view, int scrollState) {
-                Log.d("WJX", "scrollState: "+ scrollState);
+                Log.d("WJX", "scrollState: " + scrollState);
             }
 
             /**
@@ -51,22 +55,23 @@ public class ListViewScrollListenerActivity extends AppCompatActivity {
              */
             @Override
             public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
-                Log.d("WJX", "firstVisibleItem:"+firstVisibleItem+" "+"visibleItemCount:"+visibleItemCount+" "+"totalItemCount:"+totalItemCount);
+                Log.d("WJX", "firstVisibleItem:" + firstVisibleItem + " " + "visibleItemCount:" + visibleItemCount + " " + "totalItemCount:" + totalItemCount);
             }
         });
     }
-    private int calItemHeight(ListView listView){
+
+    private int calItemHeight(ListView listView) {
         int totalHeight = 0;
         ListAdapter listAdapter = listView.getAdapter();
-        if(listAdapter == null){
+        if (listAdapter == null) {
             return 0;
         }
-        for(int i = 0, size = listAdapter.getCount(); i < size; i++){
+        for (int i = 0, size = listAdapter.getCount(); i < size; i++) {
             View item = listAdapter.getView(i, null, listView);
             item.measure(0, 0);
             totalHeight += item.getMeasuredHeight();
         }
-        return  totalHeight;
+        return totalHeight;
 
     }
 }

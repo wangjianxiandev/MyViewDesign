@@ -17,12 +17,13 @@ import com.example.adminstator.myviewdesign.R;
 public class ScrollerListViewConflictActivity extends AppCompatActivity {
     private ListView listView;
     private TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scroller_list_view_conflict);
-        listView = (ListView)findViewById(R.id.listviewscroll);
-        textView = (TextView)findViewById(R.id.result);
+        listView = (ListView) findViewById(R.id.listviewscroll);
+        textView = (TextView) findViewById(R.id.result);
         String[] arr = {
                 "a",
                 "b",
@@ -39,15 +40,16 @@ public class ScrollerListViewConflictActivity extends AppCompatActivity {
 
     /**
      * 动态计算ListView中的item的高度，在计算总高度
+     *
      * @param listView
      */
-    public void setListViewHeightBaseOnChildren(ListView listView){
+    public void setListViewHeightBaseOnChildren(ListView listView) {
         ListAdapter listAdapter = listView.getAdapter();
-        if(listAdapter == null){
+        if (listAdapter == null) {
             return;
         }
         int totalHeight = 0;
-        for(int i = 0, size = listAdapter.getCount(); i < size; i++){
+        for (int i = 0, size = listAdapter.getCount(); i < size; i++) {
             View item = listAdapter.getView(i, null, listView);
             item.measure(0, 0);
             totalHeight += item.getMeasuredHeight();
